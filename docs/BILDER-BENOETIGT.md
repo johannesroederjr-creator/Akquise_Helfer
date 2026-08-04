@@ -11,13 +11,10 @@ weiterhin bestehende Einverständnis.
 
 ## 1. Marke
 
-| Datei | Verwendung | Empfehlung |
+| Datei | Verwendung | Status |
 |---|---|---|
-| `assets/img/logo.svg` | Header und Footer aller Seiten | Original-Logo als SVG, quadratisch oder mit angepasster Breite im CSS |
-| `assets/img/favicon.svg` | Browser-Tab | SVG genügt; zusätzlich `favicon.ico` (32×32) für ältere Browser sinnvoll |
-
-Der aktuelle Platzhalter ist ein schlichtes „A“-Zeichen im Markenblau – kein Ersatz
-für das echte Logo.
+| `assets/img/logo.png` | Header und Footer aller Seiten | Eingebunden (max. 74 px Höhe per CSS) |
+| `assets/img/favicon.png` | Browser-Tab | Eingebunden |
 
 ---
 
@@ -25,10 +22,10 @@ für das echte Logo.
 
 | Datei | Seite | Motivvorschlag | Format |
 |---|---|---|---|
-| `assets/img/platzhalter-hero-start.svg` | Startseite, Hero | Beratungssituation oder Team am Arbeitsplatz, freundlich und unaufgeregt | 1600 × 1200 px, JPG oder WebP |
+| `assets/img/Akquise-Helfer_Strategische-Akquise-Telefon.png` | Startseite, Hero | Johannes Röder und Gesa Gröning im Büro | Eingebunden (360 × 275 px; für Retina ggf. größere Version nachliefern) |
 | `assets/img/platzhalter-hero-telefonakquise.svg` | Telefonakquise, Hero | Telefongespräch am Schreibtisch, Notizen sichtbar | 1600 × 1200 px, JPG oder WebP |
-| `assets/img/platzhalter-portrait-johannes-roeder.svg` | Über uns | Portrait Johannes Röder | 1200 × 1400 px, hochkant |
-| `assets/img/platzhalter-portrait-gesa-groening.svg` | Über uns | Portrait Gesa Gröning | 1200 × 1400 px, hochkant |
+| `assets/img/Portrait_Johannes_Roeder.png` | Über uns | Portrait Johannes Röder | Eingebunden (825 × 963 px) |
+| `assets/img/Portrait_Gesa_Groening.png` | Über uns | Portrait Gesa Gröning | Eingebunden (600 × 700 px) |
 
 Optional zusätzlich sinnvoll, aber im aktuellen Layout nicht zwingend:
 je ein Motiv für Strategie, Workshops und Content/Ads.
