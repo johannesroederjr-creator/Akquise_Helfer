@@ -516,35 +516,11 @@ strong { color: var(--ink-900); font-weight: 650; }
 .field--check label { font-weight: 400; font-size: var(--step--1); color: var(--ink-500); line-height: 1.5; }
 .req { color: #c0392b; }
 
-.booking { display: grid; grid-template-columns: 1.1fr .9fr; gap: 1.5rem; }
-@media (max-width: 780px) { .booking { grid-template-columns: 1fr; } }
-.calendar { border: 1px solid var(--line); border-radius: var(--radius); padding: 1.1rem; background: #fff; }
-.calendar__head { display: flex; align-items: center; justify-content: space-between; margin-bottom: .9rem; }
-.calendar__title { font-weight: 700; color: var(--ink-900); }
-.calendar__nav { display: flex; gap: .4rem; }
-.calendar__nav button {
-  width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--line);
-  background: #fff; color: var(--ink-500); cursor: not-allowed;
+.booking-frame {
+  border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden;
+  box-shadow: var(--shadow); background: #fff;
 }
-.calendar__grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: .3rem; text-align: center; }
-.calendar__grid span { font-size: .72rem; font-weight: 700; color: var(--ink-300); text-transform: uppercase; padding-bottom: .3rem; }
-.calendar__grid button {
-  aspect-ratio: 1; border: 1px solid transparent; border-radius: 8px;
-  background: var(--surface-alt); color: var(--ink-700); font: inherit; font-size: .88rem; cursor: pointer;
-}
-.calendar__grid button:hover:not([disabled]) { background: var(--brand-100); color: var(--brand-800); }
-.calendar__grid button[disabled] { color: var(--ink-300); background: transparent; cursor: default; }
-.calendar__grid button[aria-pressed="true"] { background: var(--brand-700); color: #fff; border-color: var(--brand-700); }
-.slots { display: grid; gap: .5rem; align-content: start; }
-.slots h3 { font-size: var(--step-0); margin-bottom: .2rem; }
-.slot {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: .7rem 1rem; border: 1.5px solid var(--line); border-radius: var(--radius-sm);
-  background: #fff; font: inherit; font-size: .95rem; color: var(--ink-900); cursor: pointer; text-align: left;
-}
-.slot:hover { border-color: var(--brand-500); background: var(--brand-050); }
-.slot[aria-pressed="true"] { border-color: var(--brand-700); background: var(--brand-700); color: #fff; }
-.slot small { color: inherit; opacity: .7; }
+.booking-frame iframe { display: block; width: 100%; height: 1000px; border: 0; }
 
 /* ---------- 16. Karte / Standorte ---------- */
 .map-frame {

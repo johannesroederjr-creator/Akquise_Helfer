@@ -93,62 +93,16 @@
         <p>30 Minuten, telefonisch oder per Videocall.</p>
       </div>
 
-      <div class="form-note">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 1 21h22L12 2Zm1 14h-2v2h2v-2Zm0-6h-2v4h2v-4Z"/></svg>
-        <span><strong>Hinweis zum Entwicklungsstand:</strong> Die Terminauswahl ist aktuell nur optisch umgesetzt. Die Anbindung an den Kalender (bisher Outlook Bookings) erfolgt in einem nachgelagerten Schritt. Bitte vereinbaren Sie Termine bis dahin telefonisch oder per E-Mail.</span>
-      </div>
+      <p class="lead" style="max-width:62ch">Wählen Sie unten einen freien Termin. Alternativ erreichen Sie uns telefonisch oder per E-Mail an <a href="mailto:kontakt@akquise-helfer.de">kontakt@akquise-helfer.de</a>.</p>
 
-      <div class="booking">
-        <div class="calendar" data-demo-select>
-          <div class="calendar__head">
-            <span class="calendar__title">Beispielmonat</span>
-            <div class="calendar__nav">
-              <button type="button" aria-label="Voriger Monat" disabled>‹</button>
-              <button type="button" aria-label="Nächster Monat" disabled>›</button>
-            </div>
-          </div>
-          <div class="calendar__grid">
-            <span>Mo</span><span>Di</span><span>Mi</span><span>Do</span><span>Fr</span><span>Sa</span><span>So</span>
-            <button type="button" disabled>1</button>
-            <button type="button" disabled>2</button>
-            <button type="button" aria-pressed="false">3</button>
-            <button type="button" aria-pressed="false">4</button>
-            <button type="button" aria-pressed="false">5</button>
-            <button type="button" disabled>6</button>
-            <button type="button" disabled>7</button>
-            <button type="button" aria-pressed="false">8</button>
-            <button type="button" aria-pressed="false">9</button>
-            <button type="button" aria-pressed="true">10</button>
-            <button type="button" aria-pressed="false">11</button>
-            <button type="button" aria-pressed="false">12</button>
-            <button type="button" disabled>13</button>
-            <button type="button" disabled>14</button>
-            <button type="button" aria-pressed="false">15</button>
-            <button type="button" aria-pressed="false">16</button>
-            <button type="button" aria-pressed="false">17</button>
-            <button type="button" aria-pressed="false">18</button>
-            <button type="button" aria-pressed="false">19</button>
-            <button type="button" disabled>20</button>
-            <button type="button" disabled>21</button>
-            <button type="button" aria-pressed="false">22</button>
-            <button type="button" aria-pressed="false">23</button>
-            <button type="button" aria-pressed="false">24</button>
-            <button type="button" aria-pressed="false">25</button>
-            <button type="button" aria-pressed="false">26</button>
-            <button type="button" disabled>27</button>
-            <button type="button" disabled>28</button>
-          </div>
-        </div>
-
-        <div class="slots" data-demo-select>
-          <h3>Freie Zeiten</h3>
-          <p class="small muted mb-1">Beispielhafte Zeitfenster – noch ohne Verbindung zum Kalender.</p>
-          <button class="slot" type="button" aria-pressed="false">09:00 <small>30 Min.</small></button>
-          <button class="slot" type="button" aria-pressed="false">10:30 <small>30 Min.</small></button>
-          <button class="slot" type="button" aria-pressed="false">13:00 <small>30 Min.</small></button>
-          <button class="slot" type="button" aria-pressed="false">15:30 <small>30 Min.</small></button>
-          <button class="slot" type="button" aria-pressed="false">16:30 <small>30 Min.</small></button>
-        </div>
+      <div class="booking-frame">
+        <iframe
+          src="https://outlook.office365.com/owa/calendar/AkquiseHelfer@akquise-helfer.de/bookings/"
+          title="Termin für Erstgespräch buchen"
+          width="100%"
+          height="1000"
+          loading="lazy"
+        ></iframe>
       </div>
     </div>
   </section>
