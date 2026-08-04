@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Open-Graph-Vorschaubild (Platzhalter)">
+  <defs>
+    <linearGradient id="og" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08407e"/>
+      <stop offset="1" stop-color="#1671d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#og)"/>
+  <rect x="80" y="76" width="76" height="76" rx="18" fill="#ffffff" opacity=".16"/>
+  <path d="M100 136 118 96l18 40" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M105 124h26" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  <text x="80" y="300" font-family="Segoe UI, sans-serif" font-size="66" font-weight="800" fill="#ffffff">Akquise-Helfer</text>
+  <text x="80" y="372" font-family="Segoe UI, sans-serif" font-size="38" fill="#cfe0f4">Telefonakquise &amp; Kundengewinnung f�r KMU</text>
+  <text x="80" y="470" font-family="Segoe UI, sans-serif" font-size="26" fill="#a9c6e6">Keine Provision � Keine Mindestlaufzeit � Volle Kontrolle</text>
+  <text x="80" y="560" font-family="Segoe UI, sans-serif" font-size="22" fill="#7fb2ec">Platzhalter  bitte durch seitenspezifisches OG-Bild (1200 � 630 px, JPG) ersetzen</text>
+</svg>

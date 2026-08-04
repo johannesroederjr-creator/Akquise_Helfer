@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /impressum/
+Disallow: /datenschutz/
+Disallow: /agb/
+Disallow: /cookie-richtlinie/
+
+Sitemap: https://www.akquise-helfer.de/sitemap.xml

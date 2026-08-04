@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Akquise-Helfer Logo (Platzhalter)">
+  <defs>
+    <linearGradient id="ahg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1671d6"/>
+      <stop offset="1" stop-color="#062f5e"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#ahg)"/>
+  <path d="M23.5 44.5 32 19.5l8.5 25" fill="none" stroke="#fff" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M26.8 36.5h10.4" fill="none" stroke="#fff" stroke-width="4.4" stroke-linecap="round"/>
+  <circle cx="46.5" cy="21.5" r="4.5" fill="#f0a202"/>
+</svg>
