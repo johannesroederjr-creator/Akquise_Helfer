@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" role="img" aria-label="Portraitplatzhalter Gesa Gr�ning">
+  <rect width="600" height="700" fill="#dbe9fa"/>
+  <circle cx="300" cy="285" r="86" fill="#7fb2ec"/>
+  <path d="M158 560c0-78 64-142 142-142s142 64 142 142z" fill="#7fb2ec"/>
+  <text x="300" y="620" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="25" font-weight="700" fill="#0a4e9b">Portrait Gesa Gr�ning</text>
+  <text x="300" y="652" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" fill="#5a6883">Platzhalter  empfohlen 1200 � 1400 px</text>
+</svg>

@@ -1,0 +1,76 @@
+# =============================================================
+# Akquise-Helfer – Apache-Konfiguration
+# Enthaelt die 301-Redirects aus Abschnitt 5 des Relaunch-Briefings.
+# Bei anderem Hosting (Netlify, Vercel, nginx) siehe _redirects bzw. README.
+# =============================================================
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # --- HTTPS und www erzwingen (vor dem Livegang pruefen) ---
+  # RewriteCond %{HTTPS} off
+  # RewriteRule ^(.*)$ https://www.akquise-helfer.de/$1 [R=301,L]
+  # RewriteCond %{HTTP_HOST} !^www\. [NC]
+  # RewriteRule ^(.*)$ https://www.akquise-helfer.de/$1 [R=301,L]
+
+  # --- Trailing Slash erzwingen (Kanonisierung) ---
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} !(/$|\.[a-zA-Z0-9]{2,5}$)
+  RewriteRule ^(.*)$ /$1/ [R=301,L]
+</IfModule>
+
+# =============================================================
+# 301-Redirects: alte URL -> neue URL
+# =============================================================
+Redirect 301 /kundenakquise/ /telefonakquise/
+Redirect 301 /ausgangssituation-analysieren/ /leistungen/strategie/
+Redirect 301 /strategie-kundengewinnung-entwickeln/ /leistungen/strategie/
+Redirect 301 /workshops-zu-vertrieb-und-marketing/ /leistungen/workshops/
+Redirect 301 /content-beratung-und-erstellung-text-video-und-mehr/ /leistungen/content-ads/
+Redirect 301 /digitaler-vertrieb/ /telefonakquise/
+Redirect 301 /corporate-tv/ /leistungen/#netzwerk
+Redirect 301 /wer-wir-sind/ /ueber-uns/
+Redirect 301 /publikationen/ /ueber-uns/#referenzen
+Redirect 301 /kontaktseite-fuer-termine/ /kontakt/
+Redirect 301 /vertrieb-optimieren/ /telefonakquise/
+Redirect 301 /ueber-uns-alt/ /ueber-uns/
+Redirect 301 /nrw-digitalzuschuss-handel/ /foerdermittel/
+Redirect 301 /download-kdlr-whitepaper-om/ /ueber-uns/#referenzen
+Redirect 301 /download-kdlr-whitepaper-dv/ /ueber-uns/#referenzen
+Redirect 301 /newsletter/ /kontakt/
+
+# =============================================================
+# Fehlerseite
+# =============================================================
+ErrorDocument 404 /404.html
+
+# =============================================================
+# Komprimierung
+# =============================================================
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json image/svg+xml
+</IfModule>
+
+# =============================================================
+# Browser-Caching
+# =============================================================
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+</IfModule>
+
+# =============================================================
+# Sicherheits-Header
+# =============================================================
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>

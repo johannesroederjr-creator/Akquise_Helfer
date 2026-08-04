@@ -1,0 +1,19 @@
+# Redirect-Regeln fuer Netlify / Cloudflare Pages
+# (Apache-Hosting nutzt stattdessen .htaccess)
+
+/kundenakquise/                                     /telefonakquise/            301
+/ausgangssituation-analysieren/                     /leistungen/strategie/      301
+/strategie-kundengewinnung-entwickeln/              /leistungen/strategie/      301
+/workshops-zu-vertrieb-und-marketing/               /leistungen/workshops/      301
+/content-beratung-und-erstellung-text-video-und-mehr/ /leistungen/content-ads/  301
+/digitaler-vertrieb/                                /telefonakquise/            301
+/corporate-tv/                                      /leistungen/#netzwerk       301
+/wer-wir-sind/                                      /ueber-uns/                 301
+/publikationen/                                     /ueber-uns/#referenzen      301
+/kontaktseite-fuer-termine/                         /kontakt/                   301
+/vertrieb-optimieren/                               /telefonakquise/            301
+/ueber-uns-alt/                                     /ueber-uns/                 301
+/nrw-digitalzuschuss-handel/                        /foerdermittel/             301
+/download-kdlr-whitepaper-om/                       /ueber-uns/#referenzen      301
+/download-kdlr-whitepaper-dv/                       /ueber-uns/#referenzen      301
+/newsletter/                                        /kontakt/                   301
