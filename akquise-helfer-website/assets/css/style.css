@@ -6,14 +6,14 @@
 
 /* ---------- 1. Tokens ---------- */
 :root {
-  --brand-900: #062f5e;
-  --brand-800: #08407e;
-  --brand-700: #0a4e9b;
-  --brand-600: #0d5fbb;
-  --brand-500: #1671d6;
-  --brand-300: #7fb2ec;
-  --brand-100: #dbe9fa;
-  --brand-050: #f1f6fd;
+  --brand-900: #1a2d3d;
+  --brand-800: #22394a;
+  --brand-700: #29435a;
+  --brand-600: #355570;
+  --brand-500: #426786;
+  --brand-300: #7a9bb0;
+  --brand-100: #d4e0e8;
+  --brand-050: #eef2f5;
 
   --ink-900: #0e1726;
   --ink-700: #33415c;
@@ -32,7 +32,7 @@
 
   --shadow-sm: 0 1px 2px rgba(14, 23, 38, .06), 0 1px 3px rgba(14, 23, 38, .04);
   --shadow: 0 4px 14px rgba(14, 23, 38, .07);
-  --shadow-lg: 0 18px 48px rgba(8, 64, 126, .13);
+  --shadow-lg: 0 18px 48px rgba(41, 67, 90, .13);
 
   --wrap: 1160px;
   --wrap-narrow: 780px;
@@ -186,11 +186,8 @@ strong { color: var(--ink-900); font-weight: 650; }
 }
 .header__inner { display: flex; align-items: center; gap: 1.5rem; min-height: 74px; }
 
-.logo { display: inline-flex; align-items: center; gap: .65rem; text-decoration: none; flex: none; }
-.logo img { width: 46px; height: 46px; }
-.logo__text { display: flex; flex-direction: column; line-height: 1.1; }
-.logo__name { font-weight: 800; color: var(--brand-800); font-size: 1.12rem; letter-spacing: -.02em; }
-.logo__claim { font-size: .72rem; color: var(--ink-500); letter-spacing: .04em; text-transform: uppercase; }
+.logo { display: inline-flex; align-items: center; text-decoration: none; flex: none; }
+.logo img { height: 74px; width: auto; max-width: min(204px, 52vw); }
 
 .nav { margin-left: auto; }
 .nav__list { display: flex; align-items: center; gap: .25rem; list-style: none; margin: 0; padding: 0; }
@@ -631,9 +628,8 @@ strong { color: var(--ink-900); font-weight: 650; }
 .footer ul { list-style: none; padding: 0; margin: 0; }
 .footer li { margin-bottom: .55em; font-size: .96rem; }
 .footer__brand p { font-size: .96rem; max-width: 34ch; }
-.footer__logo { display: inline-flex; align-items: center; gap: .6rem; margin-bottom: 1rem; }
-.footer__logo img { width: 42px; height: 42px; }
-.footer__logo span { font-weight: 800; color: #fff; font-size: 1.1rem; }
+.footer__logo { display: inline-flex; align-items: center; margin-bottom: 1rem; }
+.footer__logo img { height: 74px; width: auto; max-width: min(204px, 52vw); }
 .footer__social { display: flex; gap: .7rem; margin-top: 1.2rem; }
 .footer__social a {
   width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center;

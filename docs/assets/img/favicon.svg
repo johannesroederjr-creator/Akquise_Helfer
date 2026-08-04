@@ -1,5 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#0a4e9b"/>
-  <path d="M22 46 32 18l10 28" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M26 37h12" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Akquise-Helfer">
+  <rect x="4" y="18" width="28" height="28" rx="7" fill="#29435a"/>
+  <text x="18" y="37" fill="#fff" font-family="Segoe UI, system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle">A</text>
+  <rect x="32" y="10" width="28" height="28" rx="7" fill="#29435a"/>
+  <text x="46" y="29" fill="#fff" font-family="Segoe UI, system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle">K</text>
 </svg>

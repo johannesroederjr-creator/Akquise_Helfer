@@ -1,0 +1,117 @@
+Cookie-Richtlinie (EU)
+Diese Cookie-Richtlinie wurde zuletzt am 13. April 2026 aktualisiert und gilt für Bürger und Einwohner mit ständigem Wohnsitz im Europäischen Wirtschaftsraum und der Schweiz.
+
+1. Einführung
+Unsere Website, https://akquise-helfer.de (im folgenden: "Die Website") verwendet Cookies und ähnliche Technologien (der Einfachheit halber werden all diese unter "Cookies" zusammengefasst). Cookies werden außerdem von uns beauftragten Drittparteien platziert. In dem unten stehendem Dokument informieren wir dich über die Verwendung von Cookies auf unserer Website.
+
+2. Was sind Cookies?
+Ein Cookie ist eine einfache kleine Datei, die gemeinsam mit den Seiten einer Internetadresse versendet und vom Webbrowser auf dem PC oder einem anderen Gerät gespeichert werden kann. Die darin gespeicherten Informationen können während folgender Besuche zu unseren oder den Servern relevanter Drittanbieter gesendet werden.
+
+3. Was sind Skripte?
+Ein Script ist ein Stück Programmcode, das benutzt wird, um unserer Website Funktionalität und Interaktivität zu ermöglichen. Dieser Code wird auf unseren Servern oder auf deinem Gerät ausgeführt.
+
+4. Was ist ein Web Beacon?
+Ein Web-Beacon (auch Pixel-Tag genannt), ist ein kleines unsichtbares Textfragment oder Bild auf einer Website, das benutzt wird, um den Verkehr auf der Website zu überwachen. Um dies zu ermöglichen werden diverse Daten von dir mittels Web-Beacons gespeichert.
+
+5. Cookies
+5.1 Technische oder funktionelle Cookies
+Einige Cookies stellen sicher, dass bestimmte Teile der Website ordnungsgemäß funktionieren und deine Benutzereinstellungen weiterhin in Erinnerung bleiben. Durch das Setzen funktionaler Cookies erleichtern wir dir den Besuch unserer Website. Auf diese Weise musst du beim Besuch unserer Website nicht wiederholt dieselben Informationen eingeben, so bleiben Artikel beispielsweise in deinem Warenkorb, bis du bezahlst. Wir können diese Cookies ohne deine Einwilligung platzieren.
+
+5.2 Analytische Cookies
+Wir verwenden analytische Cookies, um das Website-Erlebnis für unsere Nutzer zu optimieren. Mit diesen analytischen Cookies erhalten wir Einblicke in die Nutzung unserer Website. Wir bitten um deine Erlaubnis, analytische Cookies zu setzen.
+
+5.3 Marketing- / Tracking-Cookies
+Marketing- / Tracking-Cookies sind Cookies oder eine andere Form der lokalen Speicherung, die zur Erstellung von Benutzerprofilen verwendet werden, um Werbung anzuzeigen oder den Benutzer auf dieser Website oder über mehrere Websites hinweg für ähnliche Marketingzwecke zu verfolgen.
+
+5.4 Soziale Medien
+Auf unserer Website haben wir Inhalte von Instagram und LinkedIn eingebunden, um Webseiten zu bewerben (z. B. "Gefällt mir", "Pin") oder zu teilen (z. B. "Tweet") in sozialen Netzwerken wie Instagram und LinkedIn. Dieser Inhalt ist mit einem Code eingebettet, der von Instagram und LinkedIn stammt und Cookies platziert. Diese Inhalte können bestimmte Informationen für personalisierte Werbung speichern und verarbeiten.
+
+Bitte lies die Datenschutzerklärung dieser sozialen Netzwerke (die sich regelmäßig ändern kann), um zu erfahren, wie sie mit deinen (persönlichen) Daten umgehen, die sie mithilfe dieser Cookies verarbeiten. Die abgerufenen Daten werden so weit wie möglich anonymisiert. Instagram und LinkedIn hat seine Sitze in den Vereinigten Staaten
+
+6. Platzierte Cookies
+WordPress
+Funktional
+
+Consent to service wordpress
+Elementor
+Statistics (anonymous)
+
+Consent to service elementor
+YouTube
+Marketing
+
+Consent to service youtube
+Complianz
+Funktional
+
+Consent to service complianz
+Google Analytics
+Statistik, Funktional
+
+Consent to service google-analytics
+Google Adsense
+Marketing, Statistik
+
+Consent to service google-adsense
+Wordfence
+Funktional
+
+Consent to service wordfence
+Google Fonts
+Marketing
+
+Consent to service google-fonts
+Google Maps
+Marketing
+
+Consent to service google-maps
+Google reCAPTCHA
+Marketing
+
+Consent to service google-recaptcha
+LinkedIn
+Funktional, Marketing, Statistik, Präferenzen
+
+Consent to service linkedin
+Sonstiges
+Zweck wird noch ermittelt
+
+Consent to service sonstiges
+7. Einwilligung
+Wenn du unsere Website das erste Mal besuchst, zeigen wir dir ein Pop-Up mit einer Erklärung über Cookies. Sobald du auf „Einstellungen speichern“ klickst, gibst du uns deine Einwilligung alle von dir gewählten Kategorien von Cookies und Plugins wie in dieser Cookie-Erklärung beschrieben zu verwenden. Du kannst die Verwendung von Cookies über deinen Browser deaktivieren, aber bitte beachte, dass unsere Website dann unter Umständen nicht richtig funktioniert.
+
+7.1 Verwalte deine Einwilligungseinstellungen
+Funktional
+Immer aktiv
+Statistiken
+
+Statistiken
+Marketing
+
+Marketing
+8. Aktivierung/Deaktivierung und Löschen von Cookies
+Du kannst deinen Internetbrowser verwenden um automatisch oder manuell Cookies zu löschen. Du kannst außerdem spezifizieren ob spezielle Cookies nicht platziert werden sollen. Eine andere Möglichkeit ist es deinen Internetbrowser derart einzurichten, dass du jedes Mal benachrichtigt wirst, wenn ein Cookie platziert wird. Für weitere Information über diese Möglichkeiten beachte die Anweisungen in der Hilfesektion deines Browsers.
+
+Bitte nimm zur Kenntnis, dass unsere Website möglicherweise nicht richtig funktioniert, wenn alle Cookies deaktiviert sind. Wenn du die Cookies in deinem Browser löscht, werden diese neu platziert, wenn du unsere Website erneut besuchst.
+
+9. Deine Rechte in Bezug auf personenbezogene Daten
+Du hast folgende Rechte in Bezug auf deine personenbezogenen Daten:
+
+Du hast das Recht zu erfahren, warum deine personenbezogenen Daten benötigt werden, was damit passiert und wie lange sie aufbewahrt werden.
+Auskunftsrecht: Du hast das Recht deine uns bekannten persönliche Daten einzusehen.
+Recht auf Berichtigung: Du hast das Recht wann immer du wünscht, deine personenbezogenen Daten zu ergänzen, zu korrigieren sowie gelöscht oder blockiert zu bekommen.
+Wenn du uns deine Einwilligung zur Verarbeitung deiner Daten erteilst, hast du das Recht diese Einwilligung zu widerrufen und deine personenbezogenen Daten löschen zu lassen.
+Recht auf Datenübertragbarkeit: Du hast das Recht, alle deine personenbezogenen Daten von dem für die Verarbeitung Verantwortlichen anzufordern und sie vollständig an einen anderen für die Verarbeitung Verantwortlichen zu übermitteln.
+Widerspruchsrecht: Du kannst der Verarbeitung deiner Daten widersprechen. Wir entsprechen dem, es sei denn es gibt berechtigte Gründe für die Verarbeitung.
+Um diese Rechte auszuüben kontaktiere uns bitte. Bitte beziehe dich auf die Kontaktdaten am Ende dieser Cookie-Erklärung. Wenn du eine Beschwerde darüber hast, wie wir deine Daten behandeln, würden wir diese gerne hören, aber du hast auch das Recht diese an die Aufsichtsbehörde (Datenschutzbehörde) zu richten.
+
+10. Kontaktdaten
+Für Fragen und/oder Kommentare über unsere Cookie-Richtlinien und diese Aussage kontaktiere uns bitte mittels der folgenden Kontaktdaten:
+
+Akquise-Helfer
+Mühlenweg 8
+36145 Hofbieber
+Deutschland
+Website: https://akquise-helfer.de
+E-Mail: roeder@akquise-helfer.de
+Telefonnummer: +4966574819973
