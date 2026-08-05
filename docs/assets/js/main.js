@@ -46,18 +46,6 @@
     });
   });
 
-  /* --- Formular-Attrappen: kein Versand, klarer Hinweis --- */
-  document.querySelectorAll('form[data-demo-form]').forEach(function (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var msg = form.querySelector('[data-demo-message]');
-      if (msg) {
-        msg.hidden = false;
-        msg.focus({ preventScroll: false });
-      }
-    });
-  });
-
   /* --- Google Maps erst nach Klick laden (DSGVO: kein Auto-Request an Google) --- */
   document.querySelectorAll('[data-map-consent]').forEach(function (box) {
     var btn = box.querySelector('button');

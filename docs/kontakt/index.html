@@ -133,11 +133,11 @@
       <div class="split__media">
         <div class="panel">
           <h3>Kontaktformular</h3>
-          <div class="form-note">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 1 21h22L12 2Zm1 14h-2v2h2v-2Zm0-6h-2v4h2v-4Z"/></svg>
-            <span><strong>Hinweis:</strong> Das Formular ist derzeit nur optisch umgesetzt und versendet noch nichts.</span>
-          </div>
-          <form class="form" data-demo-form novalidate>
+          <form class="form" action="https://formspree.io/f/mlgwpyrg" method="POST" target="_top" aria-label="Kontaktformular" onsubmit="var hp=document.getElementById('company'); if(hp&amp;&amp;hp.value.trim()!==''){event.preventDefault();}">
+            <div aria-hidden="true" style="display:none">
+              <label for="company">Firma (nicht ausfüllen)</label>
+              <input autocomplete="off" id="company" name="company" tabindex="-1" type="text">
+            </div>
             <div class="field">
               <label for="firma">Firma <span class="req" aria-hidden="true">*</span></label>
               <input type="text" id="firma" name="firma" autocomplete="organization" required>
@@ -170,8 +170,10 @@
               <input type="checkbox" id="einwilligung" name="einwilligung" required>
               <label for="einwilligung">Ich willige ein, dass meine Angaben zur Kontaktaufnahme und für Rückfragen gespeichert werden. Weitere Informationen in der <a href="../datenschutz/">Datenschutzerklärung</a>.</label>
             </div>
-            <button class="btn btn--primary" type="submit">Nachricht senden</button>
-            <p class="small mb-0" data-demo-message tabindex="-1" hidden role="status">Danke! Dies ist eine Vorschau ohne Versandfunktion – bitte nutzen Sie vorerst <a href="mailto:kontakt@akquise-helfer.de">kontakt@akquise-helfer.de</a> oder <a href="tel:+4966574819973">06657 4819973</a>.</p>
+            <div class="btn-row">
+              <button class="btn btn--primary" type="submit">Nachricht senden</button>
+              <a class="btn btn--ghost" href="https://www.linkedin.com/in/johannes-r%C3%B6der/" rel="noreferrer noopener" target="_blank">Mit uns auf LinkedIn verbinden</a>
+            </div>
           </form>
         </div>
       </div>
