@@ -516,6 +516,16 @@ strong { color: var(--ink-900); font-weight: 650; }
 .field--check label { font-weight: 400; font-size: var(--step--1); color: var(--ink-500); line-height: 1.5; }
 .req { color: #c0392b; }
 
+.booking-panel { display: grid; gap: 1rem; }
+.booking-intro {
+  display: grid; place-items: center; text-align: center; gap: .9rem;
+  padding: clamp(1.5rem, 3vw, 2rem);
+  border: 1px solid var(--line); border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, var(--brand-050), #fff);
+  box-shadow: var(--shadow);
+}
+.booking-intro p { max-width: 52ch; color: var(--ink-500); margin: 0; }
+.booking-intro .btn-row { justify-content: center; }
 .booking-frame {
   border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden;
   box-shadow: var(--shadow); background: #fff;

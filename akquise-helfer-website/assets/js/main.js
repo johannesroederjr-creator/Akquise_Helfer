@@ -89,6 +89,22 @@
     });
   });
 
+  /* --- Microsoft Bookings: Iframe erst nach Klick (Login-Seite darf nicht eingebettet werden) --- */
+  document.querySelectorAll('[data-booking-embed]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var panel = btn.closest('[data-booking-view]');
+      if (!panel) return;
+      var intro = panel.querySelector('[data-booking-intro]');
+      var frameWrap = panel.querySelector('[data-booking-frame]');
+      var frame = frameWrap && frameWrap.querySelector('iframe');
+      var src = frame && frame.getAttribute('data-booking-src');
+      if (!frameWrap || !frame || !src) return;
+      if (intro) intro.hidden = true;
+      frameWrap.hidden = false;
+      if (!frame.getAttribute('src')) frame.setAttribute('src', src);
+    });
+  });
+
   /* --- Jahreszahl im Footer --- */
   document.querySelectorAll('[data-year]').forEach(function (el) {
     el.textContent = String(new Date().getFullYear());

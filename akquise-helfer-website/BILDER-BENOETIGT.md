@@ -23,7 +23,7 @@ weiterhin bestehende Einverständnis.
 | Datei | Seite | Motivvorschlag | Format |
 |---|---|---|---|
 | `assets/img/Akquise-Helfer_Strategische-Akquise-Telefon.png` | Startseite, Hero | Johannes Röder und Gesa Gröning im Büro | Eingebunden (360 × 275 px; für Retina ggf. größere Version nachliefern) |
-| `assets/img/platzhalter-hero-telefonakquise.svg` | Telefonakquise, Hero | Telefongespräch am Schreibtisch, Notizen sichtbar | 1600 × 1200 px, JPG oder WebP |
+| `assets/img/platzhalter-hero-telefonakquise.svg` | — | Telefongespräch am Schreibtisch (optional) | Nicht eingebunden – Telefonakquise nutzt textbasiertes Hero ohne Bild |
 | `assets/img/Portrait_Johannes_Roeder.png` | Über uns | Portrait Johannes Röder | Eingebunden (825 × 963 px) |
 | `assets/img/Portrait_Gesa_Groening.png` | Über uns | Portrait Gesa Gröning | Eingebunden (600 × 700 px) |
 
