@@ -426,6 +426,7 @@ strong { color: var(--ink-900); font-weight: 650; }
   display: block; margin-bottom: .35rem;
 }
 .quote p { color: var(--ink-700); font-size: 1.02rem; }
+.quote p + p { margin-top: .75rem; }
 .quote figcaption { margin-top: auto; padding-top: 1rem; font-size: var(--step--1); color: var(--ink-500); }
 .quote cite { font-style: normal; font-weight: 700; color: var(--ink-900); display: block; }
 
@@ -462,6 +463,14 @@ strong { color: var(--ink-900); font-weight: 650; }
   transition: filter .2s ease, opacity .2s ease;
 }
 .logo-wall li:hover img { filter: none; opacity: 1; }
+.logo-wall a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.logo-wall a:focus-visible { outline: 2px solid var(--brand-500); outline-offset: 2px; border-radius: var(--radius-sm); }
 .logo-wall__text {
   font-size: var(--step--1);
   font-weight: 600;
@@ -510,6 +519,14 @@ strong { color: var(--ink-900); font-weight: 650; }
   max-width: 100%;
   object-fit: contain;
 }
+.logo-marquee__list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.logo-marquee__list a:focus-visible { outline: 2px solid var(--brand-500); outline-offset: 2px; border-radius: var(--radius-sm); }
 @keyframes logo-marquee {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
