@@ -1,0 +1,514 @@
+================================================================================
+SEO-DATEN – Akquise-Helfer Website (akquise-helfer.de)
+Stand: 06.08.2026
+Quelle: akquise-helfer-website/
+================================================================================
+
+GLOBALE META-DATEN (auf indexierbaren Seiten)
+--------------------------------------------------------------------------------
+html lang:              de
+og:type:                website
+og:locale:              de_DE
+og:site_name:           Akquise-Helfer
+og:image:               https://www.akquise-helfer.de/assets/img/og-default.svg
+twitter:card:           summary_large_image
+
+Sitemap:                https://www.akquise-helfer.de/sitemap.xml
+Robots:                 https://www.akquise-helfer.de/robots.txt
+
+
+================================================================================
+INDEXIERBARE SEITEN (robots: index, follow)
+================================================================================
+
+--------------------------------------------------------------------------------
+1. STARTSEITE
+   URL:        https://www.akquise-helfer.de/
+   Canonical:  https://www.akquise-helfer.de/
+   Sitemap:    priority 1.0 | changefreq monthly
+
+   Title:
+   Akquise-Helfer | Telefonakquise & Kundengewinnung für KMU
+
+   Meta Description:
+   Strategische Telefonakquise statt Callcenter. Beratung und operative
+   Unterstützung bei der Kundengewinnung – flexibel, transparent, ohne
+   Mindestlaufzeit.
+
+   Open Graph:
+   og:title:       Akquise-Helfer | Telefonakquise & Kundengewinnung für KMU
+   og:description: Strategische Telefonakquise statt Callcenter. Flexibel,
+                   transparent, ohne Mindestlaufzeit.
+   og:url:         https://www.akquise-helfer.de/
+
+   Überschriften (Inhalt):
+   H1:  Kundengewinnung mit strategischer Akquise
+   H2:  Akquise ausprobieren, ohne sich zu verpflichten
+   H2:  Telefonakquise im Kern – ergänzt um alles, was sie wirksam macht
+   H2:  Drei Standorte, ein Team
+   H2:  Lassen Sie uns über Ihre Kundengewinnung sprechen
+   H2:  Bis zu 90 % Förderung – wir prüfen es für Sie mit
+
+   Strukturierte Daten (JSON-LD):
+   - Organization (Akquise-Helfer)
+   - WebSite
+   - ProfessionalService (3 Standorte: Hofbieber, Halstenbek, Düsseldorf)
+
+
+--------------------------------------------------------------------------------
+2. TELEFONAKQUISE
+   URL:        https://www.akquise-helfer.de/telefonakquise/
+   Canonical:  https://www.akquise-helfer.de/telefonakquise/
+   Sitemap:    priority 0.9 | changefreq monthly
+
+   Title:
+   Telefonakquise ohne Callcenter für KMU | Akquise-Helfer
+
+   Meta Description:
+   Strategische Telefonakquise statt Callcenter-Abtelefonieren. Transparenter
+   Ablauf von Onboarding bis laufender Kaltakquise, keine Mindestlaufzeit.
+
+   Open Graph:
+   og:title:       Telefonakquise für Unternehmen – ohne Callcenter
+   og:description: Strategische Telefonakquise mit transparentem Ablauf:
+                   Onboarding, laufende Kaltakquise, dokumentierte Ergebnisse
+                   je Kontakt.
+   og:url:         https://www.akquise-helfer.de/telefonakquise/
+
+   Überschriften (Inhalt):
+   H1:  Neukunden gewinnen ist kein Zufall – sondern unser System
+   H2:  Akquise starten, ohne sich vorher zu binden
+   H2:  Warum reicht „einfach anrufen“ nicht?
+   H2:  Was wir konkret übernehmen
+   H2:  So läuft ein Telefonakquise-Projekt ab
+   H2:  Transparent nach Aufwand – ohne Paketdruck
+   H2:  Was Kundinnen und Kunden berichten
+   H2:  Ist Telefonakquise erlaubt?
+   H2:  Testen Sie uns mit einem überschaubaren Kontingent
+
+   Strukturierte Daten (JSON-LD):
+   - Service (Telefonakquise)
+   - BreadcrumbList
+
+
+--------------------------------------------------------------------------------
+3. LEISTUNGEN (Übersicht)
+   URL:        https://www.akquise-helfer.de/leistungen/
+   Canonical:  https://www.akquise-helfer.de/leistungen/
+   Sitemap:    priority 0.7 | changefreq monthly
+
+   Title:
+   Leistungen: Strategie, Workshops & Content | Akquise-Helfer
+
+   Meta Description:
+   Kompetenzen rund um die Akquise: Strategie & Analyse, Workshops zu
+   Telefonakquise und KI-Marketing sowie Content & Ads – plus unser
+   Partnernetzwerk.
+
+   Open Graph:
+   og:title:       Leistungen: Strategie, Workshops & Content | Akquise-Helfer
+   og:description: Strategie & Analyse, Workshops und Content & Ads – die
+                   Kompetenzen rund um unsere Telefonakquise.
+   og:url:         https://www.akquise-helfer.de/leistungen/
+
+   Überschriften (Inhalt):
+   H1:  Alles, was Ihre Akquise wirksam macht
+   H2:  Strategie & Analyse
+   H2:  Workshops & Schulungen
+   H2:  Content & Ads
+   H2:  Zwei Spezialthemen, zwei eigene Marken
+   H2:  Nicht sicher, was Sie zuerst brauchen?
+
+   Strukturierte Daten (JSON-LD):
+   - Service
+   - BreadcrumbList
+
+
+--------------------------------------------------------------------------------
+4. STRATEGIE & ANALYSE
+   URL:        https://www.akquise-helfer.de/leistungen/strategie/
+   Canonical:  https://www.akquise-helfer.de/leistungen/strategie/
+   Sitemap:    priority 0.7 | changefreq monthly
+
+   Title:
+   Strategie & Analyse für Ihren Vertrieb | Akquise-Helfer
+
+   Meta Description:
+   Zielgruppen- und Wettbewerbsanalyse, SWOT und digitaler Präsenzcheck –
+   daraus entwickeln wir eine Vertriebsstrategie mit klaren Zielen und
+   Erfolgskontrolle.
+
+   Open Graph:
+   og:title:       Strategie & Analyse für Vertrieb und Kundengewinnung
+   og:description: Erst analysieren, dann entscheiden: Zielgruppen, Wettbewerb,
+                   SWOT und digitale Präsenz als Grundlage Ihrer Vertriebsstrategie.
+   og:url:         https://www.akquise-helfer.de/leistungen/strategie/
+
+   Überschriften (Inhalt):
+   H1:  Erst wissen, wen Sie ansprechen – dann anrufen
+   H2:  Analyse: die Ausgangssituation sauber erfassen
+   H2:  Strategie: aus Erkenntnissen werden Entscheidungen
+   H2:  Sie brauchen echte Datenanalyse?
+   H2:  Strategie zuerst oder direkt telefonieren?
+
+   Strukturierte Daten (JSON-LD):
+   - Service
+   - BreadcrumbList
+
+
+--------------------------------------------------------------------------------
+5. WORKSHOPS & SCHULUNGEN
+   URL:        https://www.akquise-helfer.de/leistungen/workshops/
+   Canonical:  https://www.akquise-helfer.de/leistungen/workshops/
+   Sitemap:    priority 0.7 | changefreq monthly
+
+   Title:
+   Workshops: Telefonakquise & KI-Marketing | Akquise-Helfer
+
+   Meta Description:
+   Praxis-Workshops zu Telefonakquise und Online-Marketing mit KI: 20 Stunden
+   in 8 Terminen, Kleingruppen ab 3 Personen, Zertifikat, bis zu 90 %
+   KOMPASS-Förderung.
+
+   Open Graph:
+   og:title:       Workshops: Telefonakquise & Online-Marketing mit KI
+   og:description: 20 Stunden, 8 Termine, Kleingruppen ab 3 Personen, Zertifikat
+                   – und für Solo-Selbstständige bis zu 90 % förderfähig.
+   og:url:         https://www.akquise-helfer.de/leistungen/workshops/
+
+   Überschriften (Inhalt):
+   H1:  Akquise und Online-Marketing selbst beherrschen
+   H2:  Zwei feste Workshop-Formate
+   H2:  Individuelle Workshops für Unternehmen
+   H2:  Was Teilnehmende berichten
+   H2:  Bis zu 90 % Zuschuss über KOMPASS
+
+   Strukturierte Daten (JSON-LD):
+   - Service
+   - BreadcrumbList
+
+
+--------------------------------------------------------------------------------
+6. CONTENT & ADS
+   URL:        https://www.akquise-helfer.de/leistungen/content-ads/
+   Canonical:  https://www.akquise-helfer.de/leistungen/content-ads/
+   Sitemap:    priority 0.7 | changefreq monthly
+
+   Title:
+   Content & Ads: Texte, Unterlagen, Anzeigen | Akquise-Helfer
+
+   Meta Description:
+   Akquise-Unterlagen, Website- und Blogtexte, Pressemitteilungen, Anzeigen
+   und Social Media – damit Ihre Kundenansprache online genauso überzeugt wie
+   am Telefon.
+
+   Open Graph:
+   og:title:       Content & Ads: Texte, Unterlagen und Anzeigen
+   og:description: Texte, Akquise-Unterlagen, Anzeigen und Social Media –
+                   abgestimmt auf Ihre Kundenansprache.
+   og:url:         https://www.akquise-helfer.de/leistungen/content-ads/
+
+   Überschriften (Inhalt):
+   H1:  Damit online hält, was am Telefon versprochen wird
+   H2:  Texte
+   H2:  Akquise-Unterlagen
+   H2:  Video & Foto
+   H2:  Anzeigen
+   H2:  Social Media
+   H2:  Automatische Profile
+   H2:  Aus Projekten
+   H2:  Content zahlt sich vor allem gemeinsam mit Akquise aus
+
+   Strukturierte Daten (JSON-LD):
+   - Service
+   - BreadcrumbList
+
+
+--------------------------------------------------------------------------------
+7. FÖRDERMITTEL
+   URL:        https://www.akquise-helfer.de/foerdermittel/
+   Canonical:  https://www.akquise-helfer.de/foerdermittel/
+   Sitemap:    priority 0.8 | changefreq monthly
+
+   Title:
+   Fördermittel: bis zu 90 % Zuschuss | Akquise-Helfer
+
+   Meta Description:
+   BAFA bis 80 %, KOMPASS bis 90 %, Fit für die Zukunft NRW bis 80 %: Welche
+   Zuschüsse für Beratung und Weiterbildung in Frage kommen – und wie wir
+   unterstützen.
+
+   Open Graph:
+   og:title:       Fördermittel für Vertriebs- & Marketingberatung
+   og:description: BAFA, KOMPASS und Fit für die Zukunft NRW – bis zu 90 %
+                   Zuschuss für Beratung und Weiterbildung.
+   og:url:         https://www.akquise-helfer.de/foerdermittel/
+
+   Überschriften (Inhalt):
+   H1:  Bis zu 90 % Ihrer Beratung sind förderfähig
+   H2:  KOMPASS
+   H2:  BAFA-Beratungsförderung
+   H2:  „Fit für die Zukunft“ NRW
+   H2:  Gründungsberatung
+   H2:  So gehen wir vor
+   H2:  Lassen Sie uns 20 Minuten über Ihre Förderoptionen sprechen
+
+   Strukturierte Daten (JSON-LD):
+   - Service
+   - BreadcrumbList
+
+
+--------------------------------------------------------------------------------
+8. ÜBER UNS
+   URL:        https://www.akquise-helfer.de/ueber-uns/
+   Canonical:  https://www.akquise-helfer.de/ueber-uns/
+   Sitemap:    priority 0.6 | changefreq yearly
+
+   Title:
+   Über uns: Johannes Röder & Gesa Gröning | Akquise-Helfer
+
+   Meta Description:
+   Zwei erfahrene Köpfe aus Vertrieb, Marketing und Medien: Wer hinter
+   Akquise-Helfer steht und welche Referenzen wir haben.
+
+   Open Graph:
+   og:title:       Über uns: Johannes Röder & Gesa Gröning
+   og:description: Wer hinter Akquise-Helfer steht – Qualifikationen und
+                   Referenzen.
+   og:url:         https://www.akquise-helfer.de/ueber-uns/
+
+   Überschriften (Inhalt):
+   H1:  Zwei Köpfe, die Akquise wirklich selbst machen
+   H2:  Johannes Röder
+   H2:  Gesa Gröning
+   H2:  Unternehmen, die mit uns gearbeitet haben
+   H2:  Lernen Sie uns im Gespräch kennen
+
+   Strukturierte Daten (JSON-LD):
+   - Person (Johannes Röder)
+   - Person (Gesa Gröning)
+   - BreadcrumbList
+
+
+--------------------------------------------------------------------------------
+9. FAQ
+   URL:        https://www.akquise-helfer.de/faq/
+   Canonical:  https://www.akquise-helfer.de/faq/
+   Sitemap:    priority 0.8 | changefreq monthly
+
+   Title:
+   Häufige Fragen zu Telefonakquise & Kosten | Akquise-Helfer
+
+   Meta Description:
+   Was kostet Telefonakquise, ist Kaltakquise erlaubt, gibt es eine
+   Mindestlaufzeit? Die wichtigsten Fragen zu Ablauf, Kosten und Förderung –
+   kurz beantwortet.
+
+   Open Graph:
+   og:title:       Häufige Fragen zu Telefonakquise, Kosten & Förderung
+   og:description: Kosten, Ablauf, Rechtslage, Mindestlaufzeit und Förderung –
+                   die häufigsten Fragen kurz beantwortet.
+   og:url:         https://www.akquise-helfer.de/faq/
+
+   Überschriften (Inhalt):
+   H1:  Häufige Fragen zu Telefonakquise und Zusammenarbeit
+   H2:  Was kostet Telefonakquise?
+   H2:  Wie läuft ein Telefonakquise-Projekt ab?
+   H2:  Ist Kaltakquise in Deutschland erlaubt?
+   H2:  Gibt es eine Mindestlaufzeit?
+   H2:  Welche Fördermittel gibt es für Vertriebs- und Marketingberatung?
+   H2:  Arbeitet ihr wie ein Callcenter?
+   H2:  Für welche Unternehmensgrößen eignet sich das Angebot?
+   H2:  Was unterscheidet euch von einer klassischen Online-Marketing- oder
+        Digitalagentur?
+   H2:  Bietet ihr auch Power-BI-Beratung oder Videoproduktion und Corporate
+        TV an?
+   H2:  Was passiert mit den recherchierten Adressen nach dem Projekt?
+   H2:  Muss ich mich langfristig binden oder ein teures Paket buchen?
+   H2:  Ihre Frage war nicht dabei?
+
+   Strukturierte Daten (JSON-LD):
+   - FAQPage (11 Fragen/Antworten)
+
+
+--------------------------------------------------------------------------------
+10. KONTAKT
+    URL:        https://www.akquise-helfer.de/kontakt/
+    Canonical:  https://www.akquise-helfer.de/kontakt/
+    Sitemap:    priority 0.6 | changefreq yearly
+
+    Title:
+    Kontakt & Terminbuchung – 3 Standorte | Akquise-Helfer
+
+    Meta Description:
+    Kostenfreies Erstgespräch vereinbaren: Termin wählen, Rückruf anfordern
+    oder direkt anrufen. Drei Standorte in Hofbieber, Halstenbek und
+    Düsseldorf.
+
+    Open Graph:
+    og:title:       Kontakt & Terminbuchung | Akquise-Helfer
+    og:description: Erstgespräch vereinbaren – telefonisch, per Formular oder
+                    über die Terminauswahl.
+    og:url:         https://www.akquise-helfer.de/kontakt/
+
+    Überschriften (Inhalt):
+    H1:  Kostenfreies Erstgespräch vereinbaren
+    H2:  Wunschtermin für das Erstgespräch
+    H2:  Lieber zurückgerufen werden?
+    H2:  Sie finden uns an drei Orten
+
+    Strukturierte Daten (JSON-LD):
+    - ContactPage
+    - BreadcrumbList
+
+
+================================================================================
+NICHT INDEXIERTE SEITEN (robots: noindex)
+================================================================================
+
+--------------------------------------------------------------------------------
+11. IMPRESSUM
+    URL:        https://www.akquise-helfer.de/impressum/
+    Canonical:  https://www.akquise-helfer.de/impressum/
+    Robots:     noindex, nofollow
+
+    Title:
+    Impressum | Akquise-Helfer
+
+    Meta Description:
+    Impressum und Anbieterkennzeichnung von Akquise-Helfer – Johannes Mario
+    Röder, Mühlenweg 8, 36145 Hofbieber.
+
+    Überschriften:
+    H1:  Impressum
+    H2:  Angaben gemäß § 5 DDG
+    H2:  Kontakt
+    H2:  Postadresse
+    H2:  Verantwortlich für den Inhalt nach §§ 5, 6 DDG
+    H2:  Bildnachweis
+    H2:  Streitschlichtung
+    H2:  Verbraucherstreitbeilegung/Universalschlichtungsstelle
+    H2:  Haftung für Inhalte
+    H2:  Haftung für Links
+    H2:  Urheberrecht
+    H2:  Hinweis zur Gültigkeit des Impressums in Social Media
+
+
+--------------------------------------------------------------------------------
+12. DATENSCHUTZ
+    URL:        https://www.akquise-helfer.de/datenschutz/
+    Canonical:  https://www.akquise-helfer.de/datenschutz/
+    Robots:     noindex, nofollow
+
+    Title:
+    Datenschutzerklärung | Akquise-Helfer
+
+    Meta Description:
+    Informationen zur Verarbeitung personenbezogener Daten auf
+    akquise-helfer.de.
+
+    Überschriften:
+    H1:  Datenschutzerklärung
+    H2:  Inhalt
+    H2:  1. Datenschutz auf einen Blick
+    H2:  2. Hosting und Content Delivery Networks (CDN)
+    H2:  3. Allgemeine Hinweise und Pflichtinformationen
+    H2:  4. Datenerfassung auf dieser Website
+    H2:  5. Plugins und Tools
+    H2:  6. Analyse-Tools und Werbung
+
+
+--------------------------------------------------------------------------------
+13. AGB
+    URL:        https://www.akquise-helfer.de/agb/
+    Canonical:  https://www.akquise-helfer.de/agb/
+    Robots:     noindex, nofollow
+
+    Title:
+    Allgemeine Geschäftsbedingungen | Akquise-Helfer
+
+    Meta Description:
+    Allgemeine Geschäftsbedingungen von Akquise-Helfer – Johannes Mario Röder.
+
+    Überschriften:
+    H1:  Allgemeine Geschäftsbedingungen
+    H2:  Übersicht
+    H2:  Allgemeines
+    H2:  Geschäftsbeziehung
+    H2:  Rechtsbeziehung
+    H2:  Auftragsabschluss
+    H2:  Leistungen
+    H2:  Präsentation
+    H2:  Fremdleistungen
+    H2:  Mitwirkungspflicht des Kunden
+    H2:  Zahlung
+    H2:  Eigentumsvorbehalt
+    H2:  Reklamationen
+    H2:  Haftung
+    H2:  Urheberrecht und Nutzungsrecht
+
+
+--------------------------------------------------------------------------------
+14. COOKIE-RICHTLINIE
+    URL:        https://www.akquise-helfer.de/cookie-richtlinie/
+    Canonical:  https://www.akquise-helfer.de/cookie-richtlinie/
+    Robots:     noindex, nofollow
+
+    Title:
+    Cookie-Richtlinie (EU) | Akquise-Helfer
+
+    Meta Description:
+    Informationen zum Einsatz von Cookies und vergleichbaren Technologien auf
+    akquise-helfer.de.
+
+    Überschriften:
+    H1:  Cookie-Richtlinie (EU)
+    H2:  Inhalt
+    H2:  1. Einführung
+    H2:  2. Was sind Cookies?
+    H2:  3. Was sind Skripte?
+    H2:  4. Was ist ein Web Beacon?
+    H2:  5. Cookies
+    H2:  6. Platzierte Cookies
+    H2:  7. Einwilligung
+    H2:  8. Aktivierung/Deaktivierung und Löschen von Cookies
+    H2:  9. Deine Rechte in Bezug auf personenbezogene Daten
+    H2:  10. Kontaktdaten
+
+
+--------------------------------------------------------------------------------
+15. 404-SEITE
+    URL:        (beliebige nicht gefundene URL)
+    Robots:     noindex, follow
+
+    Title:
+    Seite nicht gefunden | Akquise-Helfer
+
+    Meta Description:
+    (keine)
+
+    Überschriften:
+    H1:  Diese Seite gibt es nicht mehr
+
+
+================================================================================
+HINWEISE
+================================================================================
+
+- Footer-Überschriften (Leistungen, Unternehmen, Kontakt) sind auf allen
+  Seiten identisch und wurden oben nicht aufgeführt.
+
+- Zeichenlängen Title (ca.):
+  Startseite:       58 Zeichen
+  Telefonakquise:   54 Zeichen
+  FAQ:              54 Zeichen
+  Kontakt:          52 Zeichen
+
+- Zeichenlängen Meta Description (ca.):
+  Startseite:       130 Zeichen
+  Telefonakquise:   138 Zeichen
+  FAQ:              155 Zeichen
+  Fördermittel:     155 Zeichen
+
+- Indexierbare Seiten in der Sitemap: 10 URLs
+- Rechtsseiten bewusst aus Sitemap ausgeschlossen (noindex)

@@ -211,10 +211,26 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://www.akquise-helfer.de/" },
-    { "@type": "ListItem", "position": 2, "name": "Leistungen", "item": "https://www.akquise-helfer.de/leistungen/" }
+  "@graph": [
+    {
+      "@type": "Review",
+      "@id": "https://www.akquise-helfer.de/leistungen/#review-heidbreder",
+      "author": {
+        "@type": "Person",
+        "name": "Katrin Heidbreder",
+        "jobTitle": "Geschäftsführerin",
+        "worksFor": { "@type": "Organization", "name": "Digibox GmbH" }
+      },
+      "reviewBody": "Mit Gesa und Johannes habe ich die Arbeit vor der Kamera lieben gelernt. Der Austausch ist immer inspirierend und ihre positive Art motivierend. Wir freuen uns auf viele weitere Projekte.",
+      "itemReviewed": { "@id": "https://www.akquise-helfer.de/#organization" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://www.akquise-helfer.de/" },
+        { "@type": "ListItem", "position": 2, "name": "Leistungen", "item": "https://www.akquise-helfer.de/leistungen/" }
+      ]
+    }
   ]
 }
 </script>
