@@ -46,17 +46,49 @@
     });
   });
 
-  /* --- Google Maps erst nach Klick laden (DSGVO: kein Auto-Request an Google) --- */
+  function hasFunctionalConsent() {
+    return !window.CookieConsent || window.CookieConsent.hasFunctional();
+  }
+
+  function showFunctionalNotice(container, onAccept) {
+    var existing = container.querySelector('.embed-consent-notice');
+    if (existing) return;
+
+    var notice = document.createElement('div');
+    notice.className = 'embed-consent-notice';
+    notice.innerHTML =
+      '<p>Für diesen Inhalt ist Ihre Zustimmung zu funktionalen Cookies erforderlich ' +
+      '(Datenübertragung an den Anbieter).</p>' +
+      '<button class="btn btn--primary btn--sm" type="button">Funktionale Cookies akzeptieren</button>';
+    notice.querySelector('button').addEventListener('click', function () {
+      if (window.CookieConsent) window.CookieConsent.acceptFunctional();
+      notice.remove();
+      if (onAccept) onAccept();
+    });
+    container.appendChild(notice);
+  }
+
+  function activateMap(box, target) {
+    box.hidden = true;
+    target.hidden = false;
+    var active = target.querySelector('[data-src][aria-pressed="true"]') || target.querySelector('[data-src]');
+    if (active) loadMap(target, active);
+  }
+
+  /* --- Google Maps erst nach Einwilligung und Klick laden --- */
   document.querySelectorAll('[data-map-consent]').forEach(function (box) {
     var btn = box.querySelector('button');
     var target = document.getElementById(box.getAttribute('data-map-target') || '');
     if (!btn || !target) return;
 
     btn.addEventListener('click', function () {
-      box.hidden = true;
-      target.hidden = false;
-      var active = target.querySelector('[data-src][aria-pressed="true"]') || target.querySelector('[data-src]');
-      if (active) loadMap(target, active);
+      if (!hasFunctionalConsent()) {
+        showFunctionalNotice(box.closest('[data-map-view]') || box.parentNode, function () {
+          activateMap(box, target);
+        });
+        return;
+      }
+      activateMap(box, target);
     });
   });
 
@@ -77,19 +109,30 @@
     });
   });
 
-  /* --- Microsoft Bookings: Iframe erst nach Klick (Login-Seite darf nicht eingebettet werden) --- */
+  function activateBooking(btn) {
+    var panel = btn.closest('[data-booking-view]');
+    if (!panel) return;
+    var intro = panel.querySelector('[data-booking-intro]');
+    var frameWrap = panel.querySelector('[data-booking-frame]');
+    var frame = frameWrap && frameWrap.querySelector('iframe');
+    var src = frame && frame.getAttribute('data-booking-src');
+    if (!frameWrap || !frame || !src) return;
+    if (intro) intro.hidden = true;
+    frameWrap.hidden = false;
+    if (!frame.getAttribute('src')) frame.setAttribute('src', src);
+  }
+
+  /* --- Microsoft Bookings: Iframe erst nach Einwilligung und Klick --- */
   document.querySelectorAll('[data-booking-embed]').forEach(function (btn) {
     btn.addEventListener('click', function () {
-      var panel = btn.closest('[data-booking-view]');
-      if (!panel) return;
-      var intro = panel.querySelector('[data-booking-intro]');
-      var frameWrap = panel.querySelector('[data-booking-frame]');
-      var frame = frameWrap && frameWrap.querySelector('iframe');
-      var src = frame && frame.getAttribute('data-booking-src');
-      if (!frameWrap || !frame || !src) return;
-      if (intro) intro.hidden = true;
-      frameWrap.hidden = false;
-      if (!frame.getAttribute('src')) frame.setAttribute('src', src);
+      if (!hasFunctionalConsent()) {
+        var panel = btn.closest('[data-booking-view]');
+        showFunctionalNotice(panel || btn.parentNode, function () {
+          activateBooking(btn);
+        });
+        return;
+      }
+      activateBooking(btn);
     });
   });
 

@@ -200,21 +200,39 @@
         <li><a href="../impressum/">Impressum</a></li>
         <li><a href="../datenschutz/">Datenschutz</a></li>
         <li><a href="../agb/">AGB</a></li>
+        <li><a href="#" data-cookie-settings>Cookie-Einstellungen</a></li>
         <li><a href="../cookie-richtlinie/">Cookie-Richtlinie</a></li>
       </ul>
     </div>
   </div>
 </footer>
 
+<script src="../assets/js/cookie-consent.js" defer></script>
 <script src="../assets/js/main.js" defer></script>
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://www.akquise-helfer.de/" },
-    { "@type": "ListItem", "position": 2, "name": "Leistungen", "item": "https://www.akquise-helfer.de/leistungen/" }
+  "@graph": [
+    {
+      "@type": "Review",
+      "@id": "https://www.akquise-helfer.de/leistungen/#review-heidbreder",
+      "author": {
+        "@type": "Person",
+        "name": "Katrin Heidbreder",
+        "jobTitle": "Geschäftsführerin",
+        "worksFor": { "@type": "Organization", "name": "Digibox GmbH" }
+      },
+      "reviewBody": "Mit Gesa und Johannes habe ich die Arbeit vor der Kamera lieben gelernt. Der Austausch ist immer inspirierend und ihre positive Art motivierend. Wir freuen uns auf viele weitere Projekte.",
+      "itemReviewed": { "@id": "https://www.akquise-helfer.de/#organization" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://www.akquise-helfer.de/" },
+        { "@type": "ListItem", "position": 2, "name": "Leistungen", "item": "https://www.akquise-helfer.de/leistungen/" }
+      ]
+    }
   ]
 }
 </script>
