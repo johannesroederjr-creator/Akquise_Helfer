@@ -7,11 +7,12 @@ on:
 
 concurrency:
   group: deploy-strato
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,10 +30,10 @@ jobs:
           sudo apt-get install -y lftp
           lftp <<EOF
           set sftp:connect-program "ssh -a -x -o StrictHostKeyChecking=no"
+          set net:timeout 30
+          set net:max-retries 3
+          set mirror:parallel-transfer-count 4
           open -u "${SFTP_USER}","${SFTP_PASS}" sftp://${SFTP_HOST}:22
-          pwd
-          ls -la
-          mirror -R --delete --verbose docs/ .
-          ls -la blog || true
+          mirror -R --verbose --parallel=4 docs/ .
           bye
           EOF
