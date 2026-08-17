@@ -6,4 +6,12 @@ Disallow: /datenschutz/
 Disallow: /agb/
 Disallow: /cookie-richtlinie/
 
+# Alte WordPress-Pfade (nicht mehr vorhanden)
+Disallow: /wp-json/
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /wp-includes/
+Disallow: /author/
+Disallow: /elementor-hf/
+
 Sitemap: https://www.akquise-helfer.de/sitemap.xml
