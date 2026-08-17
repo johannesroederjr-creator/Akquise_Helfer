@@ -20,12 +20,19 @@ jobs:
         run: rsync -a --delete --exclude .git akquise-helfer-website/ docs/
 
       - name: Upload to Strato via SFTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.5
-        with:
-          server: ${{ secrets.STRATO_SFTP_HOST }}
-          username: ${{ secrets.STRATO_SFTP_USER }}
-          password: ${{ secrets.STRATO_SFTP_PASSWORD }}
-          port: 22
-          local_path: ./docs/**
-          remote_path: ${{ secrets.STRATO_SFTP_PATH }}
-          sftp_only: true
+        env:
+          SFTP_HOST: ${{ secrets.STRATO_SFTP_HOST }}
+          SFTP_USER: ${{ secrets.STRATO_SFTP_USER }}
+          SFTP_PASS: ${{ secrets.STRATO_SFTP_PASSWORD }}
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y lftp
+          lftp <<EOF
+          set sftp:connect-program "ssh -a -x -o StrictHostKeyChecking=no"
+          open -u "${SFTP_USER}","${SFTP_PASS}" sftp://${SFTP_HOST}:22
+          pwd
+          ls -la
+          mirror -R --delete --verbose docs/ .
+          ls -la blog || true
+          bye
+          EOF
