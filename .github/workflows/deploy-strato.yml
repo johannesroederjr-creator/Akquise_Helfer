@@ -25,6 +25,7 @@ jobs:
           SFTP_HOST: ${{ secrets.STRATO_SFTP_HOST }}
           SFTP_USER: ${{ secrets.STRATO_SFTP_USER }}
           SFTP_PASS: ${{ secrets.STRATO_SFTP_PASSWORD }}
+          SFTP_PATH: ${{ secrets.STRATO_SFTP_PATH }}
         run: |
           pip install paramiko
           python <<'PY'
@@ -34,17 +35,26 @@ jobs:
           host = os.environ["SFTP_HOST"]
           user = os.environ["SFTP_USER"]
           password = os.environ["SFTP_PASS"]
+          remote_base = os.environ.get("SFTP_PATH", ".").strip() or "."
+          if remote_base == "/":
+              remote_base = "."
           local_root = "docs"
 
           transport = paramiko.Transport((host, 22))
           transport.connect(username=user, password=password)
           sftp = paramiko.SFTPClient.from_transport(transport)
 
+          print(f"Remote base: {remote_base!r}")
+          try:
+              print("Remote listing before upload:", sftp.listdir(remote_base))
+          except Exception as exc:
+              print(f"Remote listing before upload failed: {exc}")
+
           def ensure_remote_dir(path):
               if path in ("", ".", "/"):
                   return
               parts = path.replace("\\", "/").strip("/").split("/")
-              current = ""
+              current = remote_base if remote_base not in (".", "/") else ""
               for part in parts:
                   current = f"{current}/{part}" if current else part
                   try:
@@ -55,16 +65,23 @@ jobs:
           uploaded = 0
           for root, _, files in os.walk(local_root):
               rel = os.path.relpath(root, local_root)
-              remote_dir = "." if rel == "." else rel.replace("\\", "/")
+              remote_dir = remote_base if rel == "." else f"{remote_base}/{rel}".replace("\\", "/")
               ensure_remote_dir(remote_dir)
               for name in files:
                   local_path = os.path.join(root, name)
-                  remote_path = name if remote_dir == "." else f"{remote_dir}/{name}"
+                  remote_path = f"{remote_dir}/{name}" if remote_dir not in (".", "") else name
                   sftp.put(local_path, remote_path)
                   uploaded += 1
                   print(f"uploaded: {remote_path}")
 
+          print(f"Done. {uploaded} files uploaded.")
+          try:
+              print("Remote listing after upload:", sftp.listdir(remote_base))
+              sftp.stat(f"{remote_base}/index.html" if remote_base not in (".", "/") else "index.html")
+              print("index.html present on server.")
+          except Exception as exc:
+              print(f"WARNING: index.html check failed: {exc}")
+
           sftp.close()
           transport.close()
-          print(f"Done. {uploaded} files uploaded.")
           PY
