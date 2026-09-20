@@ -348,10 +348,12 @@ strong { color: var(--ink-900); font-weight: 650; }
   aspect-ratio: 4 / 3; object-fit: cover; background: var(--brand-100);
 }
 .hero--slim { padding-block: clamp(2.25rem, 4.5vw, 3.6rem); }
-.hero--slim .hero__grid { grid-template-columns: 1.08fr .92fr; }
+.hero--slim .hero__grid { grid-template-columns: 1.25fr .75fr; align-items: start; }
 .hero--slim h1 { max-width: 20ch; }
+.hero--slim .hero__media { max-width: 360px; justify-self: end; }
 @media (max-width: 900px) {
   .hero--slim .hero__grid { grid-template-columns: 1fr; }
+  .hero--slim .hero__media { max-width: 360px; justify-self: start; }
 }
 @media (max-width: 900px) {
   .hero__grid { grid-template-columns: 1fr; }
