@@ -493,6 +493,22 @@ strong { color: var(--ink-900); font-weight: 650; }
   content: "„"; font-size: 3rem; line-height: .8; color: var(--brand-300); font-weight: 700;
   display: block; margin-bottom: .35rem;
 }
+.quote:has(.quote__head)::before { display: none; }
+.quote__head {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  margin-bottom: .85rem; padding-bottom: .85rem; border-bottom: 1px solid var(--line);
+}
+.quote__head--label-only { justify-content: flex-start; }
+.quote__logo {
+  max-height: 40px; max-width: 130px; width: auto; height: auto;
+  object-fit: contain; filter: grayscale(1); transition: filter .2s ease;
+}
+.quote:hover .quote__logo { filter: grayscale(0); }
+.quote__label {
+  font-size: var(--step--1); font-weight: 700; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--brand-600); text-align: right; flex-shrink: 0;
+}
+.quote__head--label-only .quote__label { text-align: left; }
 .quote p { color: var(--ink-700); font-size: 1.02rem; }
 .quote p + p { margin-top: .75rem; }
 .quote figcaption { margin-top: auto; padding-top: 1rem; font-size: var(--step--1); color: var(--ink-500); }
