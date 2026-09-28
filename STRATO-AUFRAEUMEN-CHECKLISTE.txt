@@ -1,0 +1,321 @@
+================================================================================
+  STRATO AUFRÄUMEN – CHECKLISTE FÜR akquise-helfer.de
+================================================================================
+
+Für wen:        Johannes (ohne Programmier-Vorkenntnisse)
+Zeitaufwand:    ca. 30–45 Minuten
+Wann:           Wenn du Ruhe hast – am besten tagsüber, falls etwas schiefgeht
+Stand:          September 2026
+
+Tipp: Hake erledigte Punkte ab, indem du [ ] durch [x] ersetzt.
+
+
+================================================================================
+KURZ ERKLÄRT: WAS IST DAS PROBLEM?
+================================================================================
+
+Deine Website FUNKTIONIERT. Sie läuft aus dem Ordner "akquise-helfer.de" bei
+Strato.
+
+Beim ersten Einrichten (Cursor -> GitHub -> Strato) wurden Dateien ZWEI MAL
+hochgeladen:
+
+  1. FALSCH:  direkt ins Strato-Hauptverzeichnis (Root) – neben dem Domain-Ordner
+  2. RICHTIG: in den Ordner "akquise-helfer.de/" – dort gehört alles hin
+
+Die doppelten Ordner im Root stören nicht die Live-Seite, machen Strato aber
+unübersichtlich. Diese Checkliste hilft dir, NUR das Überflüssige zu entfernen –
+ohne die Website zu beschädigen.
+
+
+================================================================================
+WICHTIG: SICHERHEITSREGELN (BITTE ZUERST LESEN)
+================================================================================
+
+[ ] Nichts löschen, bevor du die Website kurz getestet hast (siehe Schritt 1)
+[ ] Immer nur eine Gruppe auf einmal löschen – nicht alles auf einmal
+[ ] Nach jedem Lösch-Schritt: Website im Browser prüfen
+[ ] Niemals den Ordner "akquise-helfer.de/" selbst löschen – nur Inhalte
+    darin oder daneben
+[ ] Bei Unsicherheit: Stopp, nichts löschen, Frage stellen
+
+
+================================================================================
+SCHRITT 1: WEBSITE FUNKTIONIERT – BASISCHECK (5 Min.)
+================================================================================
+
+Bevor du aufräumst, prüfe kurz, dass alles läuft:
+
+[ ] Öffne https://www.akquise-helfer.de – Startseite lädt?
+[ ] Klicke auf Telefonakquise – Seite lädt?
+[ ] Klicke auf Kontakt – Seite lädt?
+[ ] Bilder werden angezeigt?
+
+Wenn JA:  Du kannst aufräumen. Die Website nutzt den Ordner akquise-helfer.de/
+Wenn NEIN: Erst aufräumen abbrechen und Hilfe holen.
+
+
+================================================================================
+SCHRITT 2: STRATO ÖFFNEN UND ORIENTIERUNG (2 Min.)
+================================================================================
+
+[ ] Einloggen bei Strato (Kunden-Login)
+[ ] Zum Webspace / SFTP / Datei-Manager gehen
+[ ] Du siehst eine Liste mit Ordnern – das ist das Hauptverzeichnis (Root)
+
+
+SO ERKENNST DU DIE ZWEI EBENEN
+------------------------------
+
+Hauptverzeichnis (Root)              <- Ebene 1 – hier liegt oft der "Müll"
+|
+|-- akquise-helfer.de/              <- Ebene 2 – HIER läuft die Live-Website
+|   |-- index.html
+|   |-- assets/
+|   |-- blog/
+|   +-- ...
+|
+|-- assets/                         <- DUPLIKAT (falsch platziert)
+|-- blog/                           <- DUPLIKAT
++-- ...
+
+
+MERKSATZ:
+  Alles Wichtige steckt IN "akquise-helfer.de/".
+  Alles Gleichnamige NEBEN "akquise-helfer.de/" ist sehr wahrscheinlich
+  überflüssig.
+
+
+================================================================================
+SCHRITT 3: ROOT-DUPLIKATE LÖSCHEN (Haupträum-Aktion)
+================================================================================
+
+WO:     Hauptverzeichnis (Root) – eine Ebene ÜBER "akquise-helfer.de/"
+
+WAS LÖSCHEN: Diese Ordner, WENN sie NEBEN "akquise-helfer.de/" liegen
+             (nicht darin):
+
+[ ] assets/
+[ ] blog/
+[ ] cookie-richtlinie/
+[ ] datenschutz/
+[ ] faq/
+[ ] foerdermittel/
+[ ] impressum/
+[ ] kontakt/
+[ ] leistungen/
+[ ] telefonakquise/
+[ ] ueber-uns/
+
+FALLS VORHANDEN, EBENFALLS IM ROOT LÖSCHEN:
+
+[ ] .htaccess   (nur die Datei im Root, NICHT die in akquise-helfer.de/)
+[ ] _redirects  (nur die Datei im Root)
+
+
+WARUM IST DAS SICHER?
+---------------------
+Dieselben Ordner existieren NOCH EINMAL in "akquise-helfer.de/".
+Die Website liest nur aus "akquise-helfer.de/" – die Kopien im Root werden
+nicht gebraucht.
+
+
+NACH DEM LÖSCHEN PRÜFEN
+------------------------
+[ ] https://www.akquise-helfer.de neu laden (Strg+F5 / hart neu laden)
+[ ] Startseite, Telefonakquise, Kontakt nochmal testen
+
+
+================================================================================
+SCHRITT 4: DEV-DATEIEN IN "akquise-helfer.de/" ENTFERNEN (empfohlen)
+================================================================================
+
+WO:  INNEN im Ordner "akquise-helfer.de/" (nicht im Root)
+
+Diese Dateien sind Notizen und Entwickler-Tools. Die Website braucht sie nicht.
+
+[ ] README.md                    – Projekt-Dokumentation
+[ ] BILDER-BENOETIGT.md          – interne Bild-Notizen
+[ ] Referenzen_Akquise_Helfer.txt – Textnotizen (Inhalt ist schon auf der Website)
+[ ] vorschau.ps1                 – lokales Vorschau-Skript (Windows)
+[ ] Vorschau-starten.cmd         – lokales Vorschau-Skript (Windows)
+[ ] .nojekyll                    – nur für GitHub Pages, auf Strato unnötig
+
+KANN BLEIBEN (harmlos, optional löschen):
+  _redirects – wird auf Strato nicht genutzt (Redirects laufen über .htaccess)
+
+
+WAS DU IN "akquise-helfer.de/" NICHT LÖSCHEN DARFST
+---------------------------------------------------
+
+  BEHALTEN              WARUM
+  --------              -----
+  index.html            Startseite
+  404.html              Fehlerseite
+  .htaccess             Weiterleitungen & Server-Einstellungen
+  robots.txt            Suchmaschinen
+  sitemap.xml           Suchmaschinen
+  assets/               Bilder, CSS, JavaScript
+  Alle Seiten-Ordner    Unterseiten (blog/, kontakt/, telefonakquise/ usw.)
+
+
+VOLLSTÄNDIGE LISTE DER SEITEN-ORDNER (ALLE BEHALTEN)
+----------------------------------------------------
+
+[ ] agb/               – behalten
+[ ] blog/              – behalten
+[ ] cookie-richtlinie/ – behalten
+[ ] datenschutz/       – behalten
+[ ] faq/               – behalten
+[ ] foerdermittel/     – behalten
+[ ] impressum/         – behalten
+[ ] kontakt/           – behalten
+[ ] leistungen/        – behalten (mit Unterordnern)
+[ ] telefonakquise/    – behalten
+[ ] ueber-uns/         – behalten
+
+
+NACH DEM LÖSCHEN PRÜFEN
+------------------------
+[ ] Website nochmal testen (Startseite + 1–2 Unterseiten)
+
+
+================================================================================
+SCHRITT 5: FREMDE ORDNER – ERST PRÜFEN, DANN ENTSCHEIDEN
+================================================================================
+
+Diese Ordner gehören NICHT zur akquise-helfer.de-Website.
+Nicht blind löschen – erst klären, ob du sie noch brauchst.
+
+  ORDNER                                    EMPFEHLUNG
+  ------                                    ----------
+  old.akquise-helfer.de/                    Backup der alten Website.
+                                            Erst löschen, wenn du sicher bist,
+                                            dass du es nicht mehr brauchst.
+
+  johannes-roeder-unternehmensberatung.de/  Andere Domain. Nur löschen, wenn
+                                            diese Domain nicht mehr hier läuft.
+
+  unternehmerinnen-circle.de/               Andere Domain. Nur löschen, wenn
+                                            diese Domain nicht mehr hier läuft.
+
+
+CHECKLISTE
+----------
+
+[ ] old.akquise-helfer.de/
+    Brauche ich das Backup noch?  Ja -> behalten / Nein -> löschen
+
+[ ] johannes-roeder-unternehmensberatung.de/
+    Läuft diese Domain hier?  Ja -> behalten / Nein -> löschen
+
+[ ] unternehmerinnen-circle.de/
+    Läuft diese Domain hier?  Ja -> behalten / Nein -> löschen
+
+
+WICHTIG:
+Falls "unternehmerinnen-circle.de/" auch IN "akquise-helfer.de/" liegt, ist das
+definitiv falsch platziert -> kann aus "akquise-helfer.de/" gelöscht werden.
+
+
+================================================================================
+SCHRITT 6: ABSCHLUSS-CHECK (5 Min.)
+================================================================================
+
+[ ] Im Root liegen keine Website-Ordner mehr neben "akquise-helfer.de/"
+    (außer evtl. andere Domains)
+[ ] In "akquise-helfer.de/" liegen keine .ps1-, .cmd-, .md-Notizdateien mehr
+[ ] https://www.akquise-helfer.de – Startseite OK
+[ ] https://www.akquise-helfer.de/telefonakquise/ – OK
+[ ] https://www.akquise-helfer.de/kontakt/ – OK
+[ ] https://www.akquise-helfer.de/leistungen/ – OK
+[ ] Bilder auf Startseite sichtbar
+
+FERTIG. Strato ist aufgeräumt.
+
+
+================================================================================
+REFERENZ: SO SOLL "akquise-helfer.de/" AUSSEHEN (Soll-Zustand)
+================================================================================
+
+Das entspricht dem Ordner "akquise-helfer-website/" in deinem Cursor-Projekt
+(bzw. "docs/" auf GitHub – beides ist identisch).
+
+akquise-helfer.de/
+|-- index.html
+|-- 404.html
+|-- .htaccess
+|-- robots.txt
+|-- sitemap.xml
+|-- assets/
+|   |-- css/
+|   |-- js/
+|   +-- img/
+|-- agb/
+|-- blog/
+|-- cookie-richtlinie/
+|-- datenschutz/
+|-- faq/
+|-- foerdermittel/
+|-- impressum/
+|-- kontakt/
+|-- leistungen/
+|   |-- content-ads/
+|   |-- strategie/
+|   +-- workshops/
+|-- telefonakquise/
++-- ueber-uns/
+
+Alles andere in diesem Ordner ist optional oder überflüssig.
+
+
+================================================================================
+WENN ETWAS SCHIEFGEHT
+================================================================================
+
+WEBSITE PLÖTZLICH KAPUTT NACH DEM LÖSCHEN?
+
+  1. Ruhe bewahren – meist hast du aus Versehen etwas aus
+     "akquise-helfer.de/" gelöscht
+  2. Nicht weiter löschen
+  3. Automatischer Fix: Ein neuer Push auf GitHub (Branch "main") lädt die
+     Website neu hoch
+     -> In Cursor: committen, pushen – GitHub Action deployt nach Strato
+  4. Oder: Aus dem Backup "old.akquise-helfer.de/" einzelne Dateien
+     zurückkopieren
+
+
+DU HAST AUS VERSEHEN "akquise-helfer.de/" GELÖSCHT?
+
+  -> Sofort stoppen. GitHub-Push auf "main" triggert ein komplettes Neu-Deploy
+     in "akquise-helfer.de/".
+
+
+================================================================================
+REIHENFOLGE AM AUFRÄUM-TAG (KURZPLAN)
+================================================================================
+
+  1. Schritt 1 – Website testen
+  2. Schritt 2 – Strato öffnen, Orientierung
+  3. Schritt 3 – Root-Duplikate löschen -> testen
+  4. Schritt 4 – Dev-Dateien in akquise-helfer.de/ löschen -> testen
+  5. Schritt 5 – Fremde Ordner prüfen (optional)
+  6. Schritt 6 – Abschluss-Check
+
+
+================================================================================
+NOTIZEN (ZUM AUSFÜLLEN AM AUFRÄUM-TAG)
+================================================================================
+
+Datum: _______________________________
+
+Was habe ich gelöscht?
+
+  -
+  -
+
+Probleme / Fragen:
+
+  -
+
+Website nach Aufräumen OK?   [ ] Ja    [ ] Nein
