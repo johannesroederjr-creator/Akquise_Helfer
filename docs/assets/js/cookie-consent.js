@@ -42,7 +42,7 @@
       '<div class="cookie-banner-inner">' +
         '<p class="cookie-banner-text">' +
           'Wir verwenden Cookies und vergleichbare Technologien, um Ihre Einstellungen zu speichern ' +
-          'und externe Inhalte (z.&nbsp;B. Google Maps, Terminbuchung) nur mit Ihrer Zustimmung zu laden. ' +
+          'und externe Inhalte (z.&nbsp;B. Google Maps, Terminbuchung, Live-Chat auf der Startseite) nur mit Ihrer Zustimmung zu laden. ' +
           '<a href="' + policyUrl() + '">Mehr erfahren</a>' +
         '</p>' +
         '<div class="cookie-banner-actions">' +
@@ -84,7 +84,7 @@
               '<span class="cookie-toggle-slider"></span>' +
             '</label>' +
           '</div>' +
-          '<p class="cookie-category-desc">Ermöglichen die Einbindung externer Inhalte wie Google Maps und die Microsoft-Terminbuchung. Ohne diese Zustimmung werden Platzhalter angezeigt.</p>' +
+          '<p class="cookie-category-desc">Ermöglichen die Einbindung externer Inhalte wie Google Maps, die Microsoft-Terminbuchung und auf der Startseite den Live-Chat (Userlike). Ohne diese Zustimmung werden Platzhalter angezeigt bzw. der Chat nicht geladen.</p>' +
         '</div>' +
         '<div class="cookie-modal-actions">' +
           '<button class="cookie-btn cookie-btn-essential" type="button" id="cookie-modal-cancel">Abbrechen</button>' +
